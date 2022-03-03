@@ -22,5 +22,5 @@ Route::get('/about', function () {
     });
 
 Route::get('/articles/{id}', function ($id) {
-    return "Ini adalah halaman article dengan ID", $id;
+    return "Ini adalah halaman article dengan ID". $id;
     });
