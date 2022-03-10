@@ -24,3 +24,7 @@ Route::get('/about', function () {
 Route::get('/articles/{id}', function ($id) {
     return "Ini adalah halaman article dengan ID". $id;
     });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
